@@ -32,14 +32,22 @@ function updateCity(event) {
   let selectedOption = event.target.options[event.target.selectedIndex];
   let city = selectedOption.textContent;
 
+  return city;
+}
+
+function updateSelectedCity(event) {
   let timezone = event.target.value;
-  //   let city = event.target.textContent;
+  let cityName = updateCity(event);
+  if (timezone === "current") {
+    timezone = moment.tz.guess();
+    cityName = timezone.replace("_", " ").split("/")[1];
+  }
   let cityTime = moment().tz(timezone);
   let citiesElement = document.querySelector("#cities");
   citiesElement.innerHTML = `
   <div class="city">
           <div>
-            <h2>${city}</h2>
+            <h2>${cityName}</h2>
             <div class="date">${cityTime.format("MMMM D, YYYY")}</div>
           </div>
           <div class="time">${cityTime.format(
@@ -54,4 +62,4 @@ setInterval(updateTime, 1000);
 
 let citiesSelectElement = document.querySelector("#city");
 
-citiesSelectElement.addEventListener("change", updateCity);
+citiesSelectElement.addEventListener("change", updateSelectedCity);
