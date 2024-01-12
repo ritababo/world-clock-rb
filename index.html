@@ -5,32 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Clock - Rita Babo</title>
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
-      <h1>World clock</h1>
+      <h1>World Clock</h1>
+      <div class="current-time-clock" id="current-time-clock"></div>
       <select name="" id="">
         <option value="">Select a city</option>
         <option value="london">London</option>
         <option value="toronto">Toronto</option>
         <option value="tokyo">Tokyo</option>
       </select>
-    </div>
-    <div class="city">
-      <h2>Los Angeles</h2>
-      <div class="date">January 11, 2024</div>
-      <div class="time">1:38:15 AM</div>
-    </div>
-    <div class="city">
-      <h2>Sydney</h2>
-      <div class="date">January 11, 2024</div>
-      <div class="time">1:38:15 PM</div>
+      <div class="city">
+        <div>
+          <h2>Los Angeles</h2>
+          <div class="date">January 11, 2024</div>
+        </div>
+        <div class="time">1:38:15 <small>AM</small></div>
+      </div>
+      <div class="city">
+        <div>
+          <h2>Sydney</h2>
+          <div class="date">January 11, 2024</div>
+        </div>
+        <div class="time">1:38:15 <small>PM</small></div>
+      </div>
     </div>
 
     <footer>
       <p>
         This project was coded by
-        <a href="https://github.com/ritababo" target="_blank">Rita Babo</a>
+        <strong>
+          <a href="https://github.com/ritababo" target="_blank"
+            >Rita Babo</a
+          ></strong
+        >
         <br />
         Open-sourced on
         <a href="https://github.com/ritababo/world-clock-rb" target="_blank"
