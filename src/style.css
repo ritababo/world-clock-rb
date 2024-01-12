@@ -36,6 +36,14 @@ select {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
 }
 
+.homepage-link {
+  font-family: "Inconsolata", monospace;
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 16px;
+  color: rgba(66, 37, 83, 0.7);
+}
+
 .city:last-child {
   border: none;
 }

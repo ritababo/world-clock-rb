@@ -26,6 +26,20 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     )}`;
   }
+
+  //Third city
+  let azoresElement = document.querySelector("#azores");
+  if (azoresElement) {
+    let azoresDateElement = azoresElement.querySelector(".date");
+    let azoresTimeElement = azoresElement.querySelector(".time");
+
+    let azoresTime = moment().tz("Atlantic/Azores");
+
+    azoresDateElement.innerHTML = azoresTime.format("MMMM D, YYYY");
+    azoresTimeElement.innerHTML = `${azoresTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    )}`;
+  }
 }
 
 function updateCity(event) {
@@ -54,6 +68,7 @@ function updateSelectedCity(event) {
             "h:mm:ss [<small>]A[</small>]"
           )}</div>
         </div>
+        <a href="/" class="homepage-link">👈 All cities</a>
     `;
 }
 
