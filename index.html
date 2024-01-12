@@ -19,8 +19,8 @@
       <h1>World Clock</h1>
       <div class="current-time-clock" id="current-time-clock"></div>
       <select name="" id="city">
-        <option value="">Select a city</option>
-        <option value="current">Current location</option>
+        <option value="">select a city</option>
+        <option value="current">My location</option>
         <option value="Europe/London">London</option>
         <option value="America/Toronto">Toronto</option>
         <option value="Asia/Tokyo">Tokyo</option>
@@ -33,13 +33,6 @@
           </div>
           <div class="time"></div>
         </div>
-        <div class="city" id="paris">
-          <div>
-            <h2>Paris</h2>
-            <div class="date"></div>
-          </div>
-          <div class="time"></div>
-        </div>
         <div class="city" id="azores">
           <div>
             <h2>Azores</h2>
@@ -47,28 +40,34 @@
           </div>
           <div class="time"></div>
         </div>
+        <div class="city" id="paris">
+          <div>
+            <h2>Paris</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
       </div>
+      <footer>
+        <p>
+          This project was coded by
+          <strong>
+            <a href="https://github.com/ritababo" target="_blank"
+              >Rita Babo</a
+            ></strong
+          >
+          <br />
+          Open-sourced on
+          <a href="https://github.com/ritababo/world-clock-rb" target="_blank"
+            >GitHub</a
+          >
+          and hosted on
+          <a href="https://world-clock-rb.netlify.app/" target="_blank"
+            >Netlify</a
+          >
+        </p>
+      </footer>
     </div>
-
-    <footer>
-      <p>
-        This project was coded by
-        <strong>
-          <a href="https://github.com/ritababo" target="_blank"
-            >Rita Babo</a
-          ></strong
-        >
-        <br />
-        Open-sourced on
-        <a href="https://github.com/ritababo/world-clock-rb" target="_blank"
-          >GitHub</a
-        >
-        and hosted on
-        <a href="https://world-clock-rb.netlify.app/" target="_blank"
-          >Netlify</a
-        >
-      </p>
-    </footer>
 
     <script src="src/index.js"></script>
   </body>

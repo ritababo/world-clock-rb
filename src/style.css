@@ -1,5 +1,6 @@
 body {
   background-color: rgb(201, 190, 215);
+  background-image: url("../media/background.png");
 }
 
 h1 {
@@ -7,6 +8,7 @@ h1 {
   font-family: "Karla", sans-serif;
   font-size: 36px;
   margin: 0 auto 20px;
+  color: rgb(111 66 161);
 }
 
 select {
@@ -14,15 +16,21 @@ select {
   width: 100%;
   padding: 10px;
   border-radius: 5px;
+  background-color: #fbc6c094;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 2px;
+  border: 1px solid #ffffffbf;
 }
 
 .container {
   max-width: 600px;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.85);
-  padding: 30px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 30px 30px 10px 30px;
   border-radius: 20px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
   /* border: 1px solid rgb(255, 255, 255); */
 }
 
@@ -33,7 +41,7 @@ select {
   margin: 20px 0;
   align-items: center;
   padding: 20px 0;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  border-bottom: 1px dashed rgb(122 102 147);
 }
 
 .homepage-link {
@@ -45,12 +53,14 @@ select {
 }
 
 .city:last-child {
-  border: none;
+  /* border: none; */
+  margin-bottom: 0;
 }
 
 h2 {
   margin: 0 0 10px;
   font-size: 28px;
+  color: rgb(122 102 147);
 }
 
 .date {
@@ -77,6 +87,7 @@ footer {
   line-height: 1.2;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.7);
+  margin: 0;
 }
 
 footer a {

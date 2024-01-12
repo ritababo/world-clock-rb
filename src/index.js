@@ -14,20 +14,6 @@ function updateTime() {
   }
 
   //Second city
-  let parisElement = document.querySelector("#paris");
-  if (parisElement) {
-    let parisDateElement = parisElement.querySelector(".date");
-    let parisTimeElement = parisElement.querySelector(".time");
-
-    let parisTime = moment().tz("Europe/Paris");
-
-    parisDateElement.innerHTML = parisTime.format("MMMM D, YYYY");
-    parisTimeElement.innerHTML = `${parisTime.format(
-      "h:mm:ss [<small>]A[</small>]"
-    )}`;
-  }
-
-  //Third city
   let azoresElement = document.querySelector("#azores");
   if (azoresElement) {
     let azoresDateElement = azoresElement.querySelector(".date");
@@ -37,6 +23,20 @@ function updateTime() {
 
     azoresDateElement.innerHTML = azoresTime.format("MMMM D, YYYY");
     azoresTimeElement.innerHTML = `${azoresTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    )}`;
+  }
+
+  //Third city
+  let parisElement = document.querySelector("#paris");
+  if (parisElement) {
+    let parisDateElement = parisElement.querySelector(".date");
+    let parisTimeElement = parisElement.querySelector(".time");
+
+    let parisTime = moment().tz("Europe/Paris");
+
+    parisDateElement.innerHTML = parisTime.format("MMMM D, YYYY");
+    parisTimeElement.innerHTML = `${parisTime.format(
       "h:mm:ss [<small>]A[</small>]"
     )}`;
   }
@@ -57,6 +57,7 @@ function updateSelectedCity(event) {
     cityName = timezone.replace("_", " ").split("/")[1];
   }
   let cityTime = moment().tz(timezone);
+
   let citiesElement = document.querySelector("#cities");
   citiesElement.innerHTML = `
   <div class="city">
