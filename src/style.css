@@ -8,7 +8,7 @@ h1 {
   font-family: "Karla", sans-serif;
   font-size: 36px;
   margin: 0 auto 20px;
-  color: rgb(111 66 161);
+  color: rgb(122 102 147);
 }
 
 select {
@@ -16,7 +16,7 @@ select {
   width: 100%;
   padding: 10px;
   border-radius: 5px;
-  background-color: #fbc6c094;
+  background-color: #7a669387;
   color: white;
   font-weight: 800;
   letter-spacing: 2px;
@@ -26,7 +26,7 @@ select {
 .container {
   max-width: 600px;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.7);
   padding: 30px 30px 10px 30px;
   border-radius: 20px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
